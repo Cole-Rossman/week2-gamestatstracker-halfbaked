@@ -64,15 +64,19 @@ save.addEventListener('click', () => {
     let totalPoints = 0;
     // Loop through the list of stats and add up the total points scored
     for (let stat of stats) {
-        console.log(stat);
+        // console.log(stat);
 
         totalPoints += stat.points;
         
     }
-    console.log(totalPoints);
-    // const game = {
-    //     number: 
-    // };
+    // console.log(totalPoints);
+    const game = {
+        number: games.length + 1,
+        
+        totalPoints: totalPoints
+    };
+
+    console.log(game);
     // Create a new object with the game number and the total points
     // { number: games.length + 1, totalPoints: totalPoints }
 
