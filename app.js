@@ -70,16 +70,22 @@ save.addEventListener('click', () => {
         
     }
     // console.log(totalPoints);
+    // Create a new object with the game number and the total points
     const game = {
+        // { number: games.length + 1, totalPoints: totalPoints }
         number: games.length + 1,
         
         totalPoints: totalPoints
     };
 
-    console.log(game);
-    // Create a new object with the game number and the total points
-    // { number: games.length + 1, totalPoints: totalPoints }
-
     // Push the new object onto the games array then call renderGames
+    games.push(game);
+
+    renderGames(game);
+
+    // console.log(game);
+
+    
     // reset the stats with resetStats
+    resetStats();
 });
