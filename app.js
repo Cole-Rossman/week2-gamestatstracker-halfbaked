@@ -48,6 +48,8 @@ form.addEventListener('submit', (e) => {
 
     stats.push(playerStats);
 
+    form.reset();
+
     renderStats();
 });
 
